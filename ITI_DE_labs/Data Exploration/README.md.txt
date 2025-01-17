@@ -1,4 +1,4 @@
-Here's a sample README for your GitHub repository related to the task:
+Here's a sample README for your GitHub repository related to the task lab 1:
 
 ---
 
