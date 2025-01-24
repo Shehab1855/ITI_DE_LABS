@@ -12,63 +12,75 @@ if [[ ! -d "$HOME/.Shehabdb/$DB_NAME" ]]; then
 fi
 
 # Table management options
-select choice in CreateTable SelectTable ListTable RemoveTable AlterTable "Exit"
+select choice in CreateTable SelectTable ListTable RemoveTable  Insert  Update "Exit"
 do
     case $REPLY in
         1) # CreateTable
-            source /mnt/e/4\ months/linux/bash/bash_project/create_table.sh $dbname
-            
+            source /mnt/e/4\ months/linux/bash/bash_project/create_table.sh $DB_NAME
         ;;
 
         2) # SelectTable
             read -r -p "Enter Table Name to select: " table_name
             table_path="$HOME/.Shehabdb/$DB_NAME/$table_name"
-            metadata_file="$table_path.meta"
-            data_file="$table_path.data"
+            read -r -p "Enter  condition " condition
+            source /mnt/e/4\ months/linux/bash/bash_project/select_records "$table_path" "$condition"
 
-            # Check if the table exists
-            if [[ -f "$metadata_file" ]]; then
-                echo "Table '$table_name' selected."
-                echo "Metadata:"
-                cat "$metadata_file"
-                echo "Data:"
-                cat "$data_file"
-            else
-                echo "Error: Table '$table_name' does not exist."
-            fi
-            
         ;;
 
         3) # ListTable
             echo "Tables in database '$DB_NAME':"
             ls -1 "$HOME/.Shehabdb/$DB_NAME" | grep -E "\.meta$" | sed 's/.meta//'
-            
         ;;
 
         4) # RemoveTable
-            read -r -p "Enter Table Name to remove: " table_name
-            metadata_file="$HOME/.Shehabdb/$DB_NAME/$table_name.meta"
-            data_file="$HOME/.Shehabdb/$DB_NAME/$table_name.data"
+          
+            read -r -p "Enter Table Name to select: " table_name
+            table_path="$HOME/.Shehabdb/$DB_NAME/$table_name"
+            read -r -p "Enter  condition " condition
+            
 
-            # Check if the table exists
-            if [[ -f "$metadata_file" ]]; then
-                rm "$metadata_file" "$data_file"
-                echo "Table '$table_name' removed successfully."
+            if (( ${#condition} == 0 )); then
+                    source /mnt/e/4\ months/linux/bash/bash_project/delete "$table_path" 
             else
-                echo "Error: Table '$table_name' does not exist."
-            fi
+                source /mnt/e/4\ months/linux/bash/bash_project/delete "$table_path" "$condition"
+            fi       
+        ;;
+
+
+
+        5) # Insert
+            
+            read -r -p "Enter Table Name to insert data into: " table_name
+            table_path="$HOME/.Shehabdb/$DB_NAME/$table_name"
+            metadata_file="$table_path.meta"
+            data_file="$table_path.data"
+
+            # Display table metadata for reference
+            echo "Inserting data into table '$table_name'."
+            echo "Table Metadata:"
+            cat "$metadata_file"
+
+            # Prompt for values separated by `:`
+            read -r -p "Enter values separated by colons (:): " values
+            source /mnt/e/4\ months/linux/bash/bash_project/insert "$table_path" "$values"
             
         ;;
 
-        5) # AlterTable
+        6) # Update
+            read -r -p "Enter Table Name to select: " table_name
+            table_path="$HOME/.Shehabdb/$DB_NAME/$table_name"
+            read -r -p "Enter set " new_var
+            read -r -p "Enter  condition " condition
+
         
-           read -r -p "Enter Table Name to alter: " table_name
-           # Pass the database name and table name as arguments to the new script
-           source /mnt/e/4\ months/linux/bash/bash_project/AlterTable.sh "$DB_NAME" "$table_name"
+            
+            source /mnt/e/4\ months/linux/bash/bash_project/update "$table_path" "$new_var" "$condition"
+             
         ;;
-        6) # Exit
+        7) # Exit
             break
         ;;
+
         *)
             echo "Invalid choice. Please try again."
         ;;

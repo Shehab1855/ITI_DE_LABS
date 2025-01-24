@@ -19,20 +19,20 @@ data_file="$table_path.data"
 # Check if the table already exists
 if [[ -f "$metadata_file" ]]; then
     echo "Error: Table '$table_name' already exists."
+    exit 1
 else
     # Create metadata and data files
-    mkdir "$table_path"
-    touch "$metadata_file" "$data_file"
+    mkdir "$table_path" || { echo "Error: Could not create table directory."; exit 1; }
+    touch "$metadata_file" "$data_file" || { echo "Error: Could not create metadata or data file."; exit 1; }
     echo "Table '$table_name' created successfully."
 
     # Define table structure
-    echo "Define the table structure (columns and data types):"
-    echo "Enter column names and data types one by one. Type 'done' when finished."
+    echo "Define the table structure by specifying column names and data types."
     echo "Format: column_name:data_type (e.g., id:int, name:string)"
-    header=""
-    columns=()
-    primary_key_column=""
+    echo "Type 'done' when you are finished."
 
+    header=""
+    primary_key_column=""
     while true; do
         read -r -p "Enter column_name:data_type: " column_definition
         if [[ $column_definition == "done" ]]; then
@@ -40,10 +40,16 @@ else
         fi
 
         # Validate column definition format
-        if [[ $column_definition =~ ^[a-zA-Z_]+:[a-zA-Z]+$ ]]; then
+        if [[ $column_definition =~ ^[a-zA-Z_]+:(int|string)$ ]]; then
             column_name=$(echo "$column_definition" | cut -d: -f1)
             data_type=$(echo "$column_definition" | cut -d: -f2)
-            
+
+            # Check for duplicate column names
+            if grep -q "^$column_name:" "$metadata_file"; then
+                echo "Error: Column '$column_name' already exists."
+                continue
+            fi
+
             # Mark the first column as primary key
             if [[ -z "$primary_key_column" ]]; then
                 primary_key_column="$column_name"
@@ -54,9 +60,6 @@ else
 
             # Add column to metadata file with primary key annotation
             echo "$column_name:$data_type" >> "$metadata_file"
-            
-            # Add column to the list of columns
-            columns+=("$column_name:$data_type")
             
             # Add to header for data file
             if [[ -z "$header" ]]; then
