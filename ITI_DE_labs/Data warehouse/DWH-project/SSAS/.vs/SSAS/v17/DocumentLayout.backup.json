@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan_Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|solutionrelative:Loan_Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan Fact.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|solutionrelative:Loan Fact.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Transaction_view.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{DB4D1632-C3B2-47B3-9771-E224AE52C623}|SSAS.dwproj|solutionrelative:Transaction_view.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Loan Fact.dim [Design]",
+              "DocumentMoniker": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan Fact.dim",
+              "RelativeDocumentMoniker": "Loan Fact.dim",
+              "ToolTip": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan Fact.dim [Design]",
+              "RelativeToolTip": "Loan Fact.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-27T23:53:46.442Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transaction_view.cube [Design]",
+              "DocumentMoniker": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Transaction_view.cube",
+              "RelativeDocumentMoniker": "Transaction_view.cube",
+              "ToolTip": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Transaction_view.cube [Design]",
+              "RelativeToolTip": "Transaction_view.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-26T21:52:40.849Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Loan_Cube.cube [Design]",
+              "DocumentMoniker": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan_Cube.cube",
+              "RelativeDocumentMoniker": "Loan_Cube.cube",
+              "ToolTip": "D:\\Studies\\ITI Data Eng\\DWH-project\\SSAS\\Loan_Cube.cube [Design]",
+              "RelativeToolTip": "Loan_Cube.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-26T16:57:11.056Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Bank_DWH</Database>
+    <Server>DESKTOP-J55R7UH\MUSTAFA</Server>
+    <ConnectionString>Data Source=DESKTOP-J55R7UH\MUSTAFA;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>3v6sTOBTUq6/kPYCiZwbnIYzV+Q=1/26/2025 11:58:01 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Bank DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XyEoTMFmENbdlJj8LItxJUNHSsg=1/26/2025 6:48:29 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Transaction_view</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>2186cWcQ+rxo+9NlZD8Xh9impRM=1/26/2025 6:48:51 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Loan_view</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>blBEkCeopf7scB81EiB/Y2kmxjI=1/26/2025 6:49:55 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NUIJvV0xsHihY4X8nB48WqGJ5RQ=1/26/2025 6:50:47 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>ATM Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WcAGs8KEtYHx/OXgO2ZahifXBjI=1/26/2025 6:51:06 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VrpMzBc7+i3RPJ1vvNhw4T2HwFY=1/26/2025 6:51:48 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Card Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7ZIbvofAUTQ1jlilvyZ/XoFnq0Y=1/26/2025 6:55:09 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Account Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iMK4CbooLYKgGAgdP6WdT1a5ykU=1/26/2025 6:49:30 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Transaction Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IPtSayL4iROFi9idhWcI90srgxI=1/26/2025 6:57:52 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Customer Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>523vZ0JnzOANiyfIixYxtXIOip8=1/26/2025 6:59:31 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Branch Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zbG2Bd7ZlbRGtpE6tH14znnR484=1/26/2025 6:59:48 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Dim Date 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1u/cLAcePn1TlLVIlwxscIr9ovo=1/28/2025 1:54:29 AM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Loan Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>04O+4QYEEUJ7ZYWBgUbPz1wG12E=1/27/2025 12:34:51 AM1/26/2025 11:42:33 PMABUXvDiLhhz/jPWmaWA17S/9+wo=1/26/2025 6:49:30 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Transaction_view</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>JhyYJ9CB2EYMIOIkrr8u/VUpSmA=1/28/2025 1:54:29 AM1/26/2025 11:42:33 PM05FBy0vPVjKmvwFh8SV4yb1O9p0=1/26/2025 6:57:10 PM1/26/2025 11:42:33 PM</TimeStamp>
+        <ID>
+          <String>Loan_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>oZQ49Mq+vEzQpZpsPNhgmaado1c=1/26/2025 6:47:17 PM1/26/2025 11:42:33 PM</TimeStamp>
+      <ID>
+        <String>Bank_DWH</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-01-27T23:54:43.06Z</LastDeployed>
+</DeploymentSnapshot>

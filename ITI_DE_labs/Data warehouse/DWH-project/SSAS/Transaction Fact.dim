@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e35bc9e6-5346-40e1-bdd8-71c8f432aef2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Transaction Fact</ID>
+  <Name>Transaction Fact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1274c3ee-a52c-4bd2-8436-31143ba6a7f3">
+    <DataSourceViewID>Transaction_view</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="7f0c25f8-d4b0-4f60-8c07-a7e6444bbe78">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0a5df4f1-8a76-4c70-8a73-96db68161299">
+      <ID>Transaction ID SK</ID>
+      <Name>Transaction ID SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62891e79-8021-4fd9-a345-990c3ea56a70">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e62f9881-d044-4d4d-a7f4-dfd3e76497fa">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>Transaction_ID_SK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a56f1af9-be95-4507-9280-ba232d260aed">
+          <AttributeID>Date ID FK</AttributeID>
+          <Name>Date ID FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="05ef7db5-73c4-4a6d-bda3-819e8d195bbc">
+          <AttributeID>ATM ID FK</AttributeID>
+          <Name>ATM ID FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eef091a6-5efa-4673-a2e5-e2491313a29a">
+          <AttributeID>Time ID FK</AttributeID>
+          <Name>Time ID FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="57fe8262-d75a-4875-88ba-5228b1460ede">
+          <AttributeID>Card ID FK</AttributeID>
+          <Name>Card ID FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1cb41701-1d23-45ba-bbf5-4c3e32134661">
+          <AttributeID>Account ID FK</AttributeID>
+          <Name>Account ID FK</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ed10193c-3dc6-4ed2-91a6-b1724db328b7">
+      <ID>Date ID FK</ID>
+      <Name>Date ID FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="11093eb0-7379-466f-a583-20a7ca51cc42">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a47c2b81-a839-4a2b-87ef-dfbc928adb28">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>Date_ID_FK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d261ec7c-7914-46a4-be0e-ea5095b7844c">
+      <ID>ATM ID FK</ID>
+      <Name>ATM ID FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e8a44de7-75f9-469a-ae04-473f3aaef680">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc7332a8-6433-4972-bd90-f86ac3c29ed9">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>ATM_ID_FK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f9b07766-f349-44f5-a07d-1fe14cf87ef2">
+      <ID>Time ID FK</ID>
+      <Name>Time ID FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39e825e5-fc53-4757-a6b6-329c3a1ec6ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f5e4ebf-5bed-4baa-b8bd-98c577a83557">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>Time_ID_FK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0cb33c9e-7ae4-4c02-bf9c-b1025b44e9f7">
+      <ID>Card ID FK</ID>
+      <Name>Card ID FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="824664d6-d84b-4860-9d64-baf48db826cc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="716d0594-f882-483f-86e4-a221e041d176">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>Card_ID_FK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66cbfb9c-d596-44d9-aac7-872a5aca9ecf">
+      <ID>Account ID FK</ID>
+      <Name>Account ID FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33908a2a-85ee-4ad6-8484-c4bfd95f4cb7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9ec2023-c075-46be-8e81-b291db4a3c30">
+            <TableID>dbo_Transaction_Fact</TableID>
+            <ColumnID>Account_ID_FK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

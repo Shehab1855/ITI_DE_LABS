@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="HAMZA.Union_Bank"
+  DTS:DTSID="{42B7FA33-F2FF-4E80-AFE7-0091F7783D5F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=HAMZA;Initial Catalog=Union_Bank;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-DWH-project-{42B7FA33-F2FF-4E80-AFE7-0091F7783D5F}HAMZA.Union_Bank;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

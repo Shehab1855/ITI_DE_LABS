@@ -1,0 +1,189 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e0908c5b-790b-4a3a-95ad-2bc2a45ff2c5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Card Dim</ID>
+  <Name>Card Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2065" scrolltop="-4305" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8107" y="13610" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Card_Dim" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3937" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000610f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Card_Dim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2065</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4305</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e2d9954e-3e0f-4d44-b323-fa4697bbac83">
+    <DataSourceViewID>Transaction_view</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a56e6ebe-4aa4-4d18-9b74-4165f5f1ef1b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="76d18d75-26c3-493d-bda8-ab0c627045f8">
+      <ID>Card ID SK</ID>
+      <Name>Card ID SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4130bb4-8419-40ad-a85f-bcab1fb101c5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80f2e264-a64c-4d1f-b5b5-ddaf4956d8a3">
+            <TableID>dbo_Card_Dim</TableID>
+            <ColumnID>Card_ID_SK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7d7a2deb-77a5-4f4f-a24d-1eb3b9f0b8e4">
+          <AttributeID>Card Type</AttributeID>
+          <Name>Card Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22d2dcd9-e001-4260-8db9-5dc987545795">
+          <AttributeID>Card Status</AttributeID>
+          <Name>Card Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bbc805e0-2657-4885-b8a6-3ffd1356b2cd">
+          <AttributeID>Exp Date</AttributeID>
+          <Name>Exp Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c555aa57-7b13-4b2c-909c-875bde2b1d24">
+      <ID>Card Type</ID>
+      <Name>Card Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e571366-5fc7-4610-aa4d-9cde2b536448">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67425d69-f936-4c4f-bc48-649e94e13894">
+            <TableID>dbo_Card_Dim</TableID>
+            <ColumnID>Card_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1390a16-5861-4339-a995-e1ffca76c5e5">
+      <ID>Card Status</ID>
+      <Name>Card Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="365e4d93-6ed3-4d02-978b-a0056def0908">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25e9e634-b26e-4b28-b1f9-82b126df3f36">
+            <TableID>dbo_Card_Dim</TableID>
+            <ColumnID>Card_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c16f3c62-f666-485d-b7be-9bd7f0aafe3a">
+      <ID>Exp Date</ID>
+      <Name>Exp Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dda91f6f-e4f6-4d51-8168-f2b6d1c52f5f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="273f5322-041d-4471-ab28-03c7cf26fe74">
+            <TableID>dbo_Card_Dim</TableID>
+            <ColumnID>Exp_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="3179546c-f502-4d56-8c41-16f46b9264db">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="1004016a-08cd-47a6-b0a4-a224b92247e3">
+          <ID>Card ID SK</ID>
+          <Name>Card ID SK</Name>
+          <SourceAttributeID>Card ID SK</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="23ee8b21-8531-46be-b306-4dd36ca4a5f4">
+          <ID>Card Status</ID>
+          <Name>Card Status</Name>
+          <SourceAttributeID>Card Status</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4d678d52-71b6-450d-9e9f-b08b9c4d5dc6">
+          <ID>Card Type</ID>
+          <Name>Card Type</Name>
+          <SourceAttributeID>Card Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5ad32d1f-23b0-4f28-875d-0f9a666b096b">
+          <ID>Exp Date</ID>
+          <Name>Exp Date</Name>
+          <SourceAttributeID>Exp Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
