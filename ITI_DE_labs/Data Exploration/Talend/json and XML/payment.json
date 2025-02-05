@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<paymentModes>
+	<paymentMode>
+		<id>1</id>
+		<mode>Cash</mode>
+	</paymentMode>
+	<paymentMode>
+		<id>2</id>
+		<mode>Debit Card</mode>
+	</paymentMode>
+	<paymentMode>
+		<id>3</id>
+		<mode>Credit Card</mode>
+	</paymentMode>
+	<paymentMode>
+		<id>4</id>
+		<mode>Paytm</mode>
+	</paymentMode>
+</paymentModes>
