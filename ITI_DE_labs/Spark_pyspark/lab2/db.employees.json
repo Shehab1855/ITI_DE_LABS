@@ -1,0 +1,46 @@
+db.employees.insertMany( 
+[
+  {
+    "name": "John Doe",
+    "department": "Sales",
+    "salary": 60000,
+    "hireDate": ISODate("2022-03-15T08:00:00Z")
+  },
+  {
+    "name": "Alice Smith",
+    "department": "Sales",
+    "salary": 55000,
+    "hireDate": ISODate("2022-05-20T09:30:00Z")
+  },
+  {
+    "name": "Bob Johnson",
+    "department": "Engineering",
+    "salary": 70000,
+    "hireDate": ISODate("2021-10-10T14:15:00Z")
+  },
+  {
+    "name": "Sarah Brown",
+    "department": "Sales",
+    "salary": 58000,
+    "hireDate": ISODate("2022-08-05T11:45:00Z")
+  },
+  {
+    "name": "David Lee",
+    "department": "Engineering",
+    "salary": 72000,
+    "hireDate": ISODate("2022-01-25T16:30:00Z")
+  },
+  {
+    "name": "Emily Taylor",
+    "department": "Engineering",
+    "salary": 68000,
+    "hireDate": ISODate("2021-12-10T08:30:00Z")
+  },
+  {
+    "name": "Olivia Wilson",
+    "department": "Sales",
+    "salary": 59000,
+    "hireDate": ISODate("2022-09-15T10:00:00Z")
+  }
+]
+)
