@@ -1,0 +1,64 @@
+[2025-04-04T22:12:23.028+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:23.030+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:12:23.034+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.033+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:23.062+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:23.733+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.731+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:run_ssis_package
+[2025-04-04T22:12:23.852+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.851+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:run_ssis_package
+[2025-04-04T22:12:23.863+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.863+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:run_ssis_package
+[2025-04-04T22:12:23.878+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.877+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:run_ssis_package
+[2025-04-04T22:12:23.889+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.888+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:run_ssis_package
+[2025-04-04T22:12:23.900+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.900+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:run_ssis_package
+[2025-04-04T22:12:23.912+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.911+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:run_ssis_package
+[2025-04-04T22:12:23.914+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.913+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:12:23.967+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:23.967+0000] {dag.py:3262} INFO - Creating ORM DAG for run_ssis_package
+[2025-04-04T22:12:24.004+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:24.003+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:12:24.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 1.040 seconds
+[2025-04-04T22:12:54.839+0000] {processor.py:186} INFO - Started process (PID=81) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:54.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:12:54.843+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:54.843+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:54.876+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:12:54.898+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:54.898+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:12:54.983+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:12:54.983+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:12:55.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.198 seconds
+[2025-04-04T22:13:25.481+0000] {processor.py:186} INFO - Started process (PID=91) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:25.482+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:13:25.484+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:25.484+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:25.501+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:25.530+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:25.530+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:13:25.556+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:25.556+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:13:25.576+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.100 seconds
+[2025-04-04T22:13:56.019+0000] {processor.py:186} INFO - Started process (PID=101) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:56.020+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:13:56.024+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:56.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:56.047+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:13:56.079+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:56.079+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:13:56.130+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:13:56.130+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:13:56.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.145 seconds
+[2025-04-04T22:14:26.643+0000] {processor.py:186} INFO - Started process (PID=111) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:26.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:14:26.967+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:26.966+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:26.986+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:27.016+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:27.016+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:14:27.045+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:27.045+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:14:27.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.430 seconds
+[2025-04-04T22:14:57.495+0000] {processor.py:186} INFO - Started process (PID=121) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:57.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:14:57.500+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:57.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:57.519+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:14:57.544+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:57.544+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:14:57.577+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:14:57.577+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:14:57.603+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.115 seconds
+[2025-04-04T22:15:28.371+0000] {processor.py:186} INFO - Started process (PID=131) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:28.388+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:15:28.391+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:28.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:28.449+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:28.518+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:28.515+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:15:28.595+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:28.595+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-03 00:00:00+00:00, run_after=2025-04-04 00:00:00+00:00
+[2025-04-04T22:15:28.633+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.272 seconds
+[2025-04-04T22:15:59.322+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:59.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-04T22:15:59.418+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:59.418+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:59.441+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-04T22:15:59.477+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:59.477+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:15:59.512+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:15:59.512+0000] {dag.py:4180} INFO - Setting next_dagrun for run_ssis_package to 2025-04-04 00:00:00+00:00, run_after=2025-04-05 00:00:00+00:00
+[2025-04-04T22:15:59.535+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ssis.py took 0.222 seconds

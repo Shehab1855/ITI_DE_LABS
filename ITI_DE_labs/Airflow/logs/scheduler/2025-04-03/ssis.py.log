@@ -1,0 +1,11 @@
+[2025-04-03T23:21:11.663+0000] {processor.py:186} INFO - Started process (PID=98) to work on /opt/airflow/dags/ssis.py
+[2025-04-03T23:21:12.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-03T23:21:18.023+0000] {logging_mixin.py:190} INFO - [2025-04-03T23:21:17.957+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-03T23:23:00.844+0000] {processor.py:186} INFO - Started process (PID=121) to work on /opt/airflow/dags/ssis.py
+[2025-04-03T23:23:01.133+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-03T23:23:01.347+0000] {logging_mixin.py:190} INFO - [2025-04-03T23:23:01.347+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-03T23:23:14.235+0000] {processor.py:925} INFO - DAG(s) 'run_ssis_package' retrieved from /opt/airflow/dags/ssis.py
+[2025-04-03T23:24:53.467+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/ssis.py
+[2025-04-03T23:24:53.991+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ssis.py for tasks to queue
+[2025-04-03T23:24:54.320+0000] {logging_mixin.py:190} INFO - [2025-04-03T23:24:54.320+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ssis.py
+[2025-04-03T23:25:29.530+0000] {logging_mixin.py:190} INFO - [2025-04-03T23:25:29.529+0000] {timeout.py:68} ERROR - Process timed out, PID: 137
